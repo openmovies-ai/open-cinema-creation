@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/Logo";
 
 export const Hero = () => {
   return (
@@ -9,10 +10,10 @@ export const Hero = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
             backgroundImage: "url('/lovable-uploads/297668f2-70d6-4fd2-83da-5cbd14b2153f.png')",
-            filter: "brightness(0.8)" // Slightly increased brightness
+            filter: "brightness(0.8)"
           }} 
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#8E2DE2]/30 via-background/60 to-[#00FFC6]/20" /> {/* Updated gradient with brand colors */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#8E2DE2]/30 via-background/60 to-[#00FFC6]/20" />
       </div>
       
       {/* Glitch effect overlay */}
@@ -20,6 +21,9 @@ export const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-up">
+        <div className="flex justify-center mb-8">
+          <Logo size={80} className="animate-glow" />
+        </div>
         <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#8E2DE2] via-[#8E2DE2] to-[#00FFC6]">
           OpenMovies AI
         </h1>
