@@ -3,9 +3,16 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient */}
-      <div className="absolute inset-0 bg-background">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background/95 animate-gradient" />
+      {/* Background with image and gradient */}
+      <div className="absolute inset-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: "url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5')",
+            filter: "brightness(0.4)"
+          }} 
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background/95" />
       </div>
       
       {/* Glitch effect overlay */}
