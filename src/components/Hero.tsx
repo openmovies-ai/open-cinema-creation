@@ -15,7 +15,7 @@ export const Hero = () => {
           onLoadStart={() => console.log("Video started loading")}
           onLoadedData={() => console.log("Video data loaded")}
         >
-          <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-technology-digital-particles-background-48271-large.mp4" type="video/mp4" />
+          <source src="/hero-video-1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         
