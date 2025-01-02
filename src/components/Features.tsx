@@ -45,13 +45,15 @@ export const Features = () => {
               
               {/* Card content */}
               <div className="relative z-10">
-                <div className="mb-6 transform transition-transform group-hover:scale-110 duration-500 
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="transform transition-transform group-hover:scale-110 duration-500 
                               group-hover:rotate-3">
-                  {feature.icon}
+                    {feature.icon}
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-foreground">
+                    {feature.title}
+                  </h3>
                 </div>
-                <h3 className="font-heading text-xl font-bold mb-3 text-foreground">
-                  {feature.title}
-                </h3>
                 <p className="font-sans text-foreground/80">
                   {feature.description}
                 </p>
