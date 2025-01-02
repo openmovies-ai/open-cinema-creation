@@ -11,8 +11,12 @@ export const Hero = () => {
           muted
           playsInline
           className="object-cover w-full h-full opacity-30"
+          onError={(e) => console.error("Video error:", e)}
+          onLoadStart={() => console.log("Video started loading")}
+          onLoadedData={() => console.log("Video data loaded")}
         >
           <source src="https://cdn.gpteng.co/videos/ai-particles.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
       </div>
 
