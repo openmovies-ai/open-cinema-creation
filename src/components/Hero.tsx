@@ -3,28 +3,10 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video background */}
-      <div className="absolute inset-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="object-cover w-full h-full opacity-30"
-          onError={(e) => console.error("Video error:", e)}
-          onLoadStart={() => console.log("Video started loading")}
-          onLoadedData={() => console.log("Video data loaded")}
-        >
-          <source src="/hero-video-1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-        {/* Fallback background in case video fails */}
+      {/* Background with gradient */}
+      <div className="absolute inset-0 bg-background">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background/95 animate-gradient" />
       </div>
-
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/95 to-primary/10" />
       
       {/* Glitch effect overlay */}
       <div className="absolute inset-0 bg-[url('/glitch-pattern.png')] opacity-5 mix-blend-overlay" />
