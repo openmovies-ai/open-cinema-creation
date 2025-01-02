@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/", // This will be updated to match your repo name when deploying
+  base: "/openmovies-ai.github.io/", // Updated to match the repository name
   plugins: [
     react(),
     mode === 'development' &&
