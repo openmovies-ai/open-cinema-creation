@@ -35,17 +35,27 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg bg-background/50 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 group backdrop-blur-sm"
+              className="p-8 rounded-xl bg-background/30 backdrop-blur-md border border-primary/20 
+                         hover:border-primary/40 transition-all duration-500 hover:scale-105 
+                         hover:shadow-[0_0_30px_rgba(142,45,226,0.2)] group
+                         relative overflow-hidden"
             >
-              <div className="mb-4 transform transition-transform group-hover:scale-110 duration-300">
-                {feature.icon}
+              {/* Gradient overlay for cards */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-50" />
+              
+              {/* Card content */}
+              <div className="relative z-10">
+                <div className="mb-6 transform transition-transform group-hover:scale-110 duration-500 
+                              group-hover:rotate-3">
+                  {feature.icon}
+                </div>
+                <h3 className="font-heading text-xl font-bold mb-3 text-foreground">
+                  {feature.title}
+                </h3>
+                <p className="font-sans text-foreground/80">
+                  {feature.description}
+                </p>
               </div>
-              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">
-                {feature.title}
-              </h3>
-              <p className="font-sans text-foreground/80">
-                {feature.description}
-              </p>
             </div>
           ))}
         </div>
