@@ -3,7 +3,7 @@ import { Logo } from "@/components/Logo";
 
 export const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen flex items-start pt-20 justify-center overflow-hidden">
       {/* Background with image and gradient */}
       <div className="absolute inset-0">
         <div 
@@ -22,7 +22,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-fade-up">
         <div className="flex justify-center mb-8">
-          <Logo size={80} className="animate-glow" />
+          <Logo size={160} className="animate-glow" />
         </div>
         <h1 className="font-heading text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#8E2DE2] via-[#8E2DE2] to-[#00FFC6]">
           OpenMovies AI
