@@ -20,8 +20,14 @@ const features = [
 
 export const Features = () => {
   return (
-    <div className="py-20 bg-background/95">
-      <div className="container mx-auto px-4">
+    <div className="py-20 relative">
+      {/* Background with gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/90" />
+      
+      {/* Animated background pattern */}
+      <div className="absolute inset-0 bg-[url('/glitch-pattern.png')] opacity-[0.03] mix-blend-overlay" />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
           The Future of Filmmaking
         </h2>
@@ -29,11 +35,17 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-6 rounded-lg bg-background/50 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 group"
+              className="p-6 rounded-lg bg-background/50 border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105 group backdrop-blur-sm"
             >
-              <div className="mb-4 transform transition-transform group-hover:scale-110 duration-300">{feature.icon}</div>
-              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">{feature.title}</h3>
-              <p className="font-sans text-foreground/80">{feature.description}</p>
+              <div className="mb-4 transform transition-transform group-hover:scale-110 duration-300">
+                {feature.icon}
+              </div>
+              <h3 className="font-heading text-xl font-bold mb-2 text-foreground">
+                {feature.title}
+              </h3>
+              <p className="font-sans text-foreground/80">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>
