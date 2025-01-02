@@ -9,10 +9,10 @@ export const Hero = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
             backgroundImage: "url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5')",
-            filter: "brightness(0.4)"
+            filter: "brightness(0.7)" // Increased brightness from 0.4 to 0.7
           }} 
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background/70 to-background/80" /> {/* Adjusted gradient opacity */}
       </div>
       
       {/* Glitch effect overlay */}
