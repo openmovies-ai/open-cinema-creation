@@ -8,11 +8,11 @@ export const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: "url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5')",
-            filter: "brightness(0.7)" // Increased brightness from 0.4 to 0.7
+            backgroundImage: "url('/lovable-uploads/297668f2-70d6-4fd2-83da-5cbd14b2153f.png')",
+            filter: "brightness(0.7)"
           }} 
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background/70 to-background/80" /> {/* Adjusted gradient opacity */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-background/70 to-background/80" />
       </div>
       
       {/* Glitch effect overlay */}
