@@ -7,7 +7,7 @@ export const Logo = ({ className = "", size = 80 }: { className?: string; size?:
       width={size}
       height={size}
       alt="OpenMovies AI Logo"
-      className={`${className} animate-glow transition-transform duration-300 hover:scale-110 animate-fade-up`}
+      className={`${className} animate-pulse animate-glow transition-transform duration-300 hover:scale-125 animate-fade-up hover:rotate-12 motion-safe:animate-bounce`}
       style={{ objectFit: 'contain' }}
     />
   );
