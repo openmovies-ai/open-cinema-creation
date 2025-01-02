@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: "/openmovies-ai.github.io/", // Updated to match the repository name
+  base: "/", // Base URL for GitHub Pages organization site
   plugins: [
     react(),
     mode === 'development' &&
