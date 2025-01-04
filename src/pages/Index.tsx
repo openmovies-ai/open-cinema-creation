@@ -12,6 +12,9 @@ const Index = () => {
       <Community />
       <Timeline />
       <Waitlist />
+      <footer className="py-6 text-center text-sm text-gray-400">
+        © {new Date().getFullYear()} OpenMovies AI. All rights reserved.
+      </footer>
     </div>
   );
 };
