@@ -12,10 +12,10 @@ export const Community = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            Join Our Community
+            Connect With Creators
           </h2>
           <p className="text-lg mb-8 text-foreground/80">
-            Connect with fellow creators, developers, and AI enthusiasts building the future of cinema
+            Join a thriving community of filmmakers, developers, and AI enthusiasts shaping the future of cinema
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button 

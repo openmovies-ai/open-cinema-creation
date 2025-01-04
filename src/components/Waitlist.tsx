@@ -10,9 +10,12 @@ export const Waitlist = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
+      // Open email client with pre-filled details
+      window.location.href = `mailto:develop@bixory.ai?subject=Openmovies AI waitlist&body=Please add me to the waitlist. My email is: ${email}`;
+      
       toast({
-        title: "Success!",
-        description: "You've been added to our waitlist. We'll be in touch soon!",
+        title: "Thanks for your interest!",
+        description: "We have you registered for FREE trial and will keep you updated!",
       });
       setEmail("");
     }
@@ -23,15 +26,14 @@ export const Waitlist = () => {
       {/* Gradient background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/5" />
-        <div className="absolute inset-0 bg-[url('/glitch-pattern.png')] opacity-[0.02] mix-blend-overlay" />
       </div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-foreground">
-          Join the Revolution
+          Be Part of the Future
         </h2>
         <p className="font-sans text-lg mb-8 text-foreground/80 max-w-2xl mx-auto">
-          Be among the first to experience the future of AI-powered filmmaking
+          Get early access to our AI-powered filmmaking platform and shape the next generation of cinema
         </p>
         <form onSubmit={handleSubmit} className="max-w-md mx-auto flex flex-col md:flex-row gap-4">
           <Input
