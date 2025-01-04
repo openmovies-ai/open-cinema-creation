@@ -29,12 +29,12 @@ export const Timeline = () => {
           {timelineItems.map((item, index) => (
             <div 
               key={index}
-              className="flex items-start gap-4 mb-8 group hover:scale-105 transition-transform duration-300"
+              className="flex items-center gap-4 mb-8 group hover:scale-105 transition-transform duration-300 justify-center"
             >
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                 <Milestone className="w-6 h-6 text-secondary" />
               </div>
-              <div>
+              <div className="text-center">
                 <h3 className="font-heading text-xl font-bold text-foreground mb-2">
                   {item.title}
                 </h3>
