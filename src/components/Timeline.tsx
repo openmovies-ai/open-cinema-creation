@@ -48,4 +48,4 @@ export const Timeline = () => {
       </div>
     </div>
   );
-});
+};

@@ -7,7 +7,6 @@ export const Community = () => {
       {/* Background with gradient */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/5" />
-        <div className="absolute inset-0 bg-[url('/glitch-pattern.png')] opacity-[0.02] mix-blend-overlay" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
